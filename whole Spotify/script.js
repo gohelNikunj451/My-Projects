@@ -6,7 +6,7 @@ let songs;
 
 async function getData() {
   //fetch song from link
-  let s = await fetch("http://127.0.0.1:5500/songs/");
+  let s = await fetch("http://127.0.0.1:5500/whole%20Spotify/songs/");
 
   // fetch detaill convert in detail and store in responce
   let responce = await s.text();
@@ -31,7 +31,8 @@ async function getData() {
 //play song
 const playSong = (track, paused = false) => {
 
-  currentSong.src = "/songs/" + track;
+  currentSong.src = `\\whole Spotify\\songs\\` + track;
+  console.log(currentSong)
   if (!paused) {
     currentSong.play();
     play.src = "svg\\pause.svg";
@@ -60,8 +61,8 @@ function convertSeconds(seconds) {
 //main Function
 async function main() {
   songs = await getData();
-
-  playSong(songs[playMusicCount], true); // by default first song is apeared
+  console.log(songs[0].replaceAll("%20", " "))
+  playSong(songs[playMusicCount].replaceAll("%20", " "), true); // by default first song is apeared
 
   let songUl = document
     .querySelector(".songList")
