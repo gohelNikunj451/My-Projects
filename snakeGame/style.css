@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=New+Tegomin&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "New Tegomin", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.mainContainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("bg.jpg");
+  background-size: 100vw 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.gameBox {
+  height: 70vmin;
+  width: 70vmin;
+  background-image: linear-gradient(#92b65a, #69ae57);
+  border: 2px solid white;
+  box-shadow: 2px 2px 10px black;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+.food {
+  background: linear-gradient(#ffc9c9, #ff0000);
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px rgb(68, 57, 57);
+  border-radius: 15px;
+}
+.head {
+  background-color: rgb(17, 0, 255);
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+  transform: translate(1.02);
+}
+.snack {
+  background-color: purple;
+  border-radius: 15px;
+  border: 1px solid white;
+  box-shadow: 1px 1px 5px black;
+}
+
+.scoreBoard {
+  padding: 10px 20px;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 10px black;
+}
+.welcomeBox {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  background-image: url("DALL·E 2025-03-02 11.01.57 - A dense jungle background with lush green trees, vines, and tropical plants. Sunlight filters through the thick canopy, creating a mystical and advent.webp");
+  color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.welcomeMsg {
+  text-align: center;
+}
+.selectBox {
+  display: flex;
+  flex-direction: column;
+}
+.selectMsg {
+  text-align: center;
+}
+.selectChoise {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.selectChoise button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 1px 1px 10px black;
+}
+#easyBtn {
+  border: 1px solid white;
+}
+#hardBtn {
+  border: 1px solid green;
+}
+#extreamBtn {
+  border: 1px solid red;
+}
+.gameOverBox {
+  display: none;
+}

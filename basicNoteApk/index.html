@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Note App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="noteContainer">
+      <!-- note Add -->
+      <div class="noteAdd">
+        <button class="noteAddBtn">+</button>
+      </div>
+      <div class="showNoteContainer">
+
+      </div>
+      <!-- end of note add  -->
+      <!-- start of create note  -->
+      <div class="createNote">
+        <div class="containerCloseBtn">
+          <button class="closeBtn"><img src="\unknow\rectangle-xmark-solid.svg" style="height: 50px;" alt=""></button>
+        </div>
+
+        <h1 style="text-align: center;margin-top:10px">Create Note</h1>
+        <div class="inMessage">
+          <textarea name="inNote" class="inNote" placeholder="Enter Notes"></textarea>
+          <!-- <input class="inNote" type="text" placeholder="Enter your Note..." /> -->
+        </div>
+        <div class="createBtnContainer">
+          <button class="createBtn">Create</button>
+        </div>
+      </div>
+      <!-- end fo create note  -->
+
+      <!-- start of edit note  -->
+      <div class="editNote">
+        <div class="containerEditCloseBtn">
+          <button class="closeEditBtn"><img src="\unknow\rectangle-xmark-solid.svg" style="height: 50px;"
+              alt=""></button>
+        </div>
+
+        <h1 style="text-align: center;margin-top:10px">Edit Note</h1>
+        <div class="inMessage">
+          <input class="inEditNote" type="text" placeholder="Enter your Note..." />
+        </div>
+        <div class="EditBtnContainer">
+          <button class="editBtn">Edit</button>
+        </div>
+      </div>
+      <!-- end of edit note  -->
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+body {
+  
+  background-color: #212121;
+  color: whitesmoke;
+  height: 100vh;
+  display:flex;
+ 
+  justify-content: center;
+}
+h1{
+  text-align:center;
+}
+
+#enterTodo {
+  padding: 10px 5px;
+  font-size: 1rem;
+}
+#enterDate {
+  padding: 12px 10px;
+}
+/* add button */
+#addBtn {
+  padding: 7px 25px;
+  background-color: rgb(22, 243, 74);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+#addBtn:hover {
+  box-shadow: 2px 2px 20px rgba(137, 43, 226, 0.903);
+  border: 1px solid white;
+}
+#addBtn:active {
+  transform: scale(0.9);
+  box-shadow: none;
+}
+.effect {
+  box-shadow: 5px 5px 10px black;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+.effect:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 20px rgba(137, 43, 226, 0.903);
+}
+/* red button  */
+#redBtn {
+  padding: 10px 25px;
+  background-color: rgb(244, 31, 84);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+#redBtn:hover {
+  box-shadow: 2px 2px 20px rgba(137, 43, 226, 0.903);
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+#redBtn:active {
+  transform: scale(0.9);
+  box-shadow: none;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: 250px 150px 100px;
+  column-gap: 30px;
+  row-gap: 10px;
+  margin-top:10px;
+}

@@ -3,5 +3,6 @@
   "editor.renderWhitespace": "boundary",
   "editor.cursorStyle": "line",
   "editor.colorDecoratorsActivatedOn": "hover",
-  "editor.defaultFormatter": "formulahendry.code-runner"
+  "editor.defaultFormatter": "formulahendry.code-runner",
+  "liveServer.settings.port": 5501
 }

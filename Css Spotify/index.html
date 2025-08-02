@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="material/logo.png" />
+
+</head>
+
+<body>
+  <!-- container Start -->
+  <div class="container">
+
+    <!-- //Navbar Start -->
+    <div class="navbar">
+
+      <div class="feature1">
+        <span>
+          <i class="fa-brands fa-spotify" style="color:white"></i>
+        </span>
+        <span><i class="fa-solid fa-house" style="color: white"></i></span>
+      </div>
+
+      <div class="feature2">
+        <div class="inputBar">
+          <i class="fa-solid fa-magnifying-glass" style="color: #b3b3b3"></i>
+          <input type="text" placeholder="what do you want to play?" />
+        </div>
+      </div>
+
+      <div class="feature3">
+        <span id="install-app-btn">
+          <i class="fa-solid fa-download fa-fade"></i>
+          Install App
+        </span>
+        <span id="sign-up-btn">
+          Sign up
+        </span>
+        <span>
+          <button id="login-button">Log in</button>
+        </span>
+      </div>
+
+    </div>
+    <!-- //Navbar End -->
+
+    <div class="main-content-container">
+      <!-- library Start  -->
+      <div class="library">
+
+        <div class="title">
+          <span>Your Library</span>
+          <button id="createBtn">
+            <span><i class="fa-solid fa-plus" style="color:#b3b3b3"></i></span>
+            <span>Create</span></button>
+        </div>
+        <!-- card container start  -->
+        <div class="song-list-container">
+          <!-- <div class="song-list-card">
+            <div class="song-list-logo"><i class="fa-solid fa-music" style="color:#8F8F8F"></i>
+            </div>
+            <div class="song-list-info">
+              <div class="song-list-info-one">Love</div>
+              <div class="song-list-info-two">mp3:Nikunj Gohel</div>
+            </div>
+          </div> -->
+        </div>
+        <!-- card constainer end  -->
+      </div>
+      <!-- library end  -->
+
+      <!-- music part start  -->
+      <div class="music-part">
+
+        <div class="music-part-tittle">
+          <span>
+            <h2>India's Best</h2>
+          </span>
+        </div>
+
+        <div class="music-card-container">
+          <!-- <div class="music-card">
+            <div class="music-card-cover"><img src="material\card2img.jpeg" alt=""></div>
+            <div class="music-card-info">
+              <span class="music-name">Ashiquie</span>
+              <span class="music-singer">Nikunj Gohel, Raj Gohel</span>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+      <!-- music part end  -->
+    </div>
+
+    <div class="footer">
+      <div class="footer-card-container">
+        <div class="footer-card-cover"><img src="material\card4img.jpeg" alt=""></div>
+        <div class="footer-card-info"><span id="footer-card-info-title">Water</span><span
+            id="footer-card-info-singer">Arjit Shingh</span></div>
+        <div class="footer-card-add"><i class="fa-solid fa-plus" style="color:white"></i></div>
+      </div>
+      <div class="footer-player-container">
+        <div class="footer-player-musicBtn">
+          <span><img src="/material/player_icon1.png" alt=""></span>
+          <span><img src="/material/player_icon2.png" alt=""></span>
+          <span><img src="/material/player_icon3.png" alt=""></span>
+          <span><img src="/material/player_icon4.png" alt=""></span>
+          <span><img src="/material/player_icon5.png" alt=""></span>
+        </div>
+        <div class="footer-player-seekbar-container">
+          <span>01:30</span>
+          <span id="seekbar-span"><input type="range" name="playBar" id=""></span>
+          <span>04:33</span>
+        </div>
+      </div>
+      <div class="footer-options-container">
+        <i class="fa-solid fa-volume-xmark" style="color:white"></i>
+        <input type="range" name="sound" id="">
+        <i class="fa-solid fa-expand" style="color:white"></i>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

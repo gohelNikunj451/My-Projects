@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("leetcode.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  /* height: 50%; */
+  width: 50%;
+
+  color: white;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 20px black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+.user-container {
+  width: 90%;
+  /* background-color: red; */
+  padding: 10px;
+  margin: 20px;
+}
+#username-input {
+  width: 85%;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+#search-btn {
+  padding: 0 10px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9d00;
+  color: white;
+}
+.progress-container {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  /* background-color: palevioletred; */
+}
+.round {
+  height: 150px;
+  width: 150px;
+
+  background: conic-gradient(#1cbaba var(--progress-degree, 0%), #264545 0%);
+  /* background-color: #264545; */
+  border-radius: 50%;
+  border: 4px solid #1cbaba;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 50%;
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 20px black;
+  text-align: center;
+}
+.medium-progress-round {
+  background: conic-gradient(#ffb700 var(--progress-degree, 0%), #534520 0%);
+  border-color: #ffb700;
+}
+.hard-progress-round {
+  background: conic-gradient(#f53737 var(--progress-degree, 0%), #512b2b 0%);
+  border-color: #f53737;
+}
+.dataFound {
+  color: #ffb700;
+}

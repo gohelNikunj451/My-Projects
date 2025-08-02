@@ -1,4 +1,5 @@
 let currentSong = new Audio();
+console.log("Helo");
 
 let body = document.querySelector("body");
 let playMusicCount = 0;
@@ -31,7 +32,8 @@ async function getData() {
 //play song
 const playSong = (track, paused = false) => {
 
-  currentSong.src = `\\whole Spotify\\songs\\` + track;
+  currentSong.src = `/whole%20Spotify/songs/` + track;
+
   console.log(currentSong)
   if (!paused) {
     currentSong.play();
